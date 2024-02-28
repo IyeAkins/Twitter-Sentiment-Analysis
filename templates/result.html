@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+        h1 {
+            margin: 0;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+            color: #666;
+        }
+        .back-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Result</h1>
+        <p>Tweet: {{ content }}</p>
+        <p>Positive: {{ response.positive }}</p>
+        <p>Negative: {{ response.negative }}</p>
+        <p>Neutral: {{ response.neutral }}</p>
+        <a class="back-button" href="/">Analyze another tweet</a>
+    </div>
+</body>
+</html>
